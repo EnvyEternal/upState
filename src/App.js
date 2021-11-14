@@ -1,12 +1,7 @@
-import Tea from "./modules/tea";
-import IceFruit from "./modules/icefruit";
-
+import Container from "./modules";
 const App = () =>{
   return(
-  <>
-  <Tea/>
-  <IceFruit/>
-  </>
+    <Container/>
   )
 }
 

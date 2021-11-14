@@ -1,12 +1,14 @@
 import React, {useState} from 'react'
 
-function IceFruit() {
-    const [iceFruit, setIceFruit] = useState('')
-    const [temperature, setTemperature] = useState(0)
+function IceFruit(props) {
+    const {iceFruit} = props
+    const {temperature} = props
+    const [ice, setIce] = useState(iceFruit)
+    const [temp, setTemp] = useState(temperature)
     return (
         <div>
-            <div>{iceFruit}</div>
-            <div>{temperature}</div>
+            <div>{ice}</div>
+            <div>{temp}</div>
         </div>
     )
 }

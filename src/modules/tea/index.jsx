@@ -1,12 +1,15 @@
 import React, {useState} from 'react'
 
-function Tea() {
-    const [temperature, setTemperature] = useState(0)
-    const [sort, setSort] = useState('')
+function Tea(props) {
+    const {temperature} = props
+    const {sort} = props
+    const [temp, setTemp] = useState(temperature)
+    const [sortTea, setSort] = useState(sort)
+    
     return (
         <div>
-            <div>{temperature}</div>
-            <div>{sort}</div>
+            <div>{temp}</div>
+            <div>{sortTea}</div>
         </div>
     )
 }
